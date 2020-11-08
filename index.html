@@ -1,56 +1,596 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-   <!-- Entête de notre page html -->
-  <head>
-    <meta charset="utf-8">
-    <title>pense bête</title>
-    <link rel="stylesheet" href="style/style.css">
-  </head>
-   <!-- Contenu de notre page -->
-  <body>
-    <header>
-      <div>
-        <img id="logo" src="https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png" alt="logo">
-      </div>
-      <nav>
-        <!-- Début de la List non ordonnée -->
-        <ul> <!--List non ordonnée -->
-          <li><a class="link-color" href="#">About</a></li> <!--Element de la liste -->
-          <li><a class="link-color" href="#">Document</a></li>
-          <li><a class="link-color" href="#">Image</a></li>
-        </ul>
-         <!-- Fin de la List non ordonnée -->
-      </nav>
-    </header>
-    <section>
-      <table>
-        <thead>
+<!-- Entête de notre page html -->
+
+<head>
+  <meta charset="utf-8">
+  <title>pense bête</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<!-- Contenu de notre page -->
+
+<body>
+  <header>
+    <div>
+      <img id="logo" src="https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png" alt="logo">
+    </div>
+    <nav>
+      <!-- Début de la List non ordonnée -->
+      <ul>
+        <!--List non ordonnée -->
+        <li><a class="link-color" href="#">About</a></li>
+        <!--Element de la liste -->
+        <li><a class="link-color" href="pages/about.html">Document</a></li>
+        <li><a class="link-color" href="#">Image</a></li>
+      </ul>
+      <!-- Fin de la List non ordonnée -->
+    </nav>
+  </header>
+  <section>
+    <table>
+      <thead>
         <tr>
           <th colspan="4">Pense Bete html</th>
         </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Balise</td>
-            <td id="description">Description</td>
-            <td class="width-20">Illustration</td>
-            <td class="width-20">Cas spécifique</td>
-          </tr>
-          <tr>
-            <td>"!DOCTYPE html"</td>
-            <td>En HTML, le doctype est le préambule "<! DOCTYPE html>" requis en haut de tous les documents.</td>
-            <td><img src="images/image-01.png" alt="doctype image"></td>
-            <td>Pour plus d'information suivez ce <a href="https://developer.mozilla.org/fr/docs/Glossaire/Doctype">lien</a> </td>
-          </tr>
-          <tr>
-            <td> html </td>
-            <td>C'est la balise principale de notre page html</td>
-            <td></td>
-            <td>Pour plus d'information suivez ce <a href="https://developer.mozilla.org/fr/docs/Glossaire/Doctype">lien</a> </td>
-          </tr>
-        </tbody>
-      </table>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Balise</td>
+          <td id="description">Description</td>
+          <td class="width-20">Illustration</td>
+          <td class="width-20">Cas spécifique</td>
+        </tr>
+        <tr>
+          <td>"!DOCTYPE html"</td>
+          <td>En HTML, le doctype est le préambule "<! DOCTYPE html>" requis en haut de tous les documents.</td>
+          <td><img src="images/image-01.png" alt="doctype image"></td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Glossaire/Doctype">lien</a> </td>
+        </tr>
+        <tr>
+          <td> html </td>
+          <td>C'est la balise principale de notre page html</td>
+          <td>
+            &lt;html&gt;
+            votre contenu ici
+            &lt;/html&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a href="https://developer.mozilla.org/fr/search?q=html">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"head"</td>
+          <td>le head est un dispositif exécutant la lecture, l'écriture ou l'éffacement de données sur un support de
+            mémorisation par exemple des bandes ou des disques"</td>
+          <td>
+            &lt;head&gt;
+            votre contenu ici
+            &lt;/head&gt;
+          </td>
+          <td>Comme tous les éléments HTML,il prend en charge les attributs universels
+            (accesskey,autocapitalize...).Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/search?q=head">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"meta"</td>
+          <td>Generalement invisibles dans le navigateur de l'internaute et situe dans la partie Head du code source
+            d'une page,elle fournie des information au sujet de la page en question.</td>
+          <td>
+            &lt;meta/&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://www.definitions-seo.com/definition-de-balise-meta/">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"link"</td>
+          <td>L'élément HTML
+            <link> définit la relation entre le document courant et une ressource externe. Cet élément peut être utilisé
+            pour définir un lien vers une feuille de style, vers les icônes utilisées en barre de titre ou comme icône
+            d'application sur les appareils mobiles.
+          </td>
+          <td>&lt;link/&gt;</td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/link">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"title"</td>
+          <td>title est une balise du codage HTML qui permet de donner un titre à une page web. Ce titre se retrouve
+            dans la barre de titre du navigateur mais également dans les pages de résultats des moteurs de recherche
+            (SERP)</td>
+          <td>
+            &lt;title&gt;
+            votre title ici
+            &lt;/title&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a href="description.html">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"address"</td>
+          <td>indique des informations de contact pour une personne, un groupe de personnes ou une organisation.</td>
+          <td>
+            &lt;address&gt;
+            &lt;a&gt;
+            votre email
+            &lt;/a&gt;
+            &lt;a&gt;
+            votre gsm
+            &lt;/a&gt;
+            &lt;/adress&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a href="description.html">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"dfn"</td>
+          <td>L'élément HTML "dfn" est utilisé afin d'indiquer le terme qui est en train d'être défini dans une phrase
+            ou un paragraphe (sa définition est écrite dans son parent "p" ou "dt" "dd>"ou "section" le plus proche).
+          </td>
+          <td>
+            &lt;dfn&gt;
+            votre email
+            &lt;/dfn&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/dfn">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"code"</td>
+          <td>L'élément HTML"code"représente un fragment de code machine. Par défaut, l'agent utilisateur utilise une
+            police à chasse fixe (monospace) afin d'afficher le texte contenu dans cet élément.</td>
+          <td>
+            &lt;code&gt;
+            votre code ici
+            &lt;/code&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/code">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"kbd"</td>
+          <td>L'élément HTML"kbd"représente une plage de texte en ligne indiquant la saisie de texte par l'utilisateur à
+            partir d'un clavier, d'une saisie vocale ou de tout autre dispositif de saisie de texte.</td>
+          <td>
+            &lt;kbd&gt;
+            Vos mot clé ici
+            &lt;/kbd&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/kbd">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"var"</td>
+          <td>L'élément HTML "var"représente une variable dans une expression mathématique ou un texte lié à la
+            programmation. Son contenu est généralement représenté avec une version italique de la police environnante
+            utilisée, toutefois, ce comportement peut dépendre du navigateur utilisé.</td>
+          <td>
+            &lt;var&gt;
+            Votre varible ici
+            &lt;/var&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/var">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"ins"</td>
+          <td>L'élément HTML "ins" représente un fragment de texte qui a été ajouté dans un document.</td>
+          <td>
+            &lt;ins&gt;
+            Votre fragment de text
+            &lt;/ins&gt;
+          </td>
+          <td>L'élément "ins" est quant à lui utilisé pour représenter des portions de texte ajoutées ,pour plus
+            d'information suivez ce <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/ins">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"del"</td>
+          <td>L'élément HTML "del" représente une portion de texte ayant été supprimée d'un document. Cet élément est
+            souvent (mais pas nécessairement) affiché rayé.</td>
+          <td></td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/del">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"b"</td>
+          <td>L'élément "b" permet d'attirer l'attention du lecteur sur le contenu d'un élément sans que ce contenu
+            revêt une importance particulière. Anciennement utilisé pour mettre le texte en gras. </td>
+          <td>
+            &lt;b&gt;
+            Put your text in bold
+            &lt;/b&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/b">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"strong"</td>
+          <td> Il indique que le texte a une importance particulière ou un certain sérieux voire un caractère urgent.
+            Cela se traduit généralement par un affichage en gras.</td>
+          <td>
+            &lt;strong&gt;
+            Put your text in bold
+            &lt;/strong&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/strong">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"u"</td>
+          <td>L'élément HTML "u" permet d'afficher un fragment de texte qui est annoté avec des éléments non textuels.
+            Par défaut, le contenu de l'élément est souligné.</td>
+          <td>
+            &lt;u&gt;
+            Your text
+            &lt;/u&gt;
+          </td>
+          <td>Par exemple marquer un texte comme étant un nom propre chinois, ou pour marquer un texte qui a été mal
+            orthographié,pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/u">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"i"</td>
+          <td>L'élément HTML "i" représente un morceau de texte qui se différencie du texte principal. </td>
+          <td>
+            &lt;i&gt;
+            put your text in italic
+            &lt;/i&gt;
+          </td>
+          <td>Comme exemple,pour des termes techniques, des phrases dans une langue étrangère ou encore l'expression des
+            pensées d'un personnage. Le contenu de cet élément est généralement affiché en italique.Pour plus
+            d'information suivez ce <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/i">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"em"</td>
+          <td>La balise em (pour emphase) est utilisé afin de marquer un texte sur lequel on veut insister. Les éléments
+            "em" peuvent être imbriqués, chaque degré d'imbrication indiquant un degré d'insistance plus élevé.</td>
+          <td>
+            &lt;em&gt;
+            put your text
+            &lt;/em&gt;
+          </td>
+          <td>Il est souvent utilisé pour indiquer un contraste, implicite ou explicite.Pour plus d'information suivez
+            ce <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/em">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"mark"</td>
+          <td>Il représente un texte marqué ou surligné à cause de sa pertinence dans le contexte.</td>
+          <td>
+            &lt;mark&gt;
+            put your text
+            &lt;/mark&gt;
+          </td>
+          <td>Par exemple il peut être utilisé afin d'indiquer les correspondances d'un mot-clé recherché au sein d'un
+            document.Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/mark">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"small"</td>
+          <td>Il permet de représenter des commentaires ou des textes à écrire en petits caractères (des termes d'un
+            contrat, des mentions relatives au droit d'auteur, etc.) quelle que soit la présentation.</td>
+          <td>
+            &lt;small&gt;
+            put your text
+            &lt;/small&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/small">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"sub"</td>
+          <td> est utilisé, pour des raisons typographiques, afin d'afficher du texte souscrit (ou en indice) (plus bas
+            et généralement plus petit) par rapport au bloc de texte environnant.</td>
+          <td>&lt;sub&gt;
+            put your text
+            &lt;/sub&gt;</td>
+          <td>L'élément "sub"devrait uniquement être utilisé à des fins typographiques (afin de modifier la position du
+            texte en raison des conventions typographiques) et non pour obtenir des effets de mise en forme. Ainsi, on
+            n'utilisera pas "sub" pour restituer l'effet visuel d'un logo mais plutôt la propriété CSS vertical-align
+            avec la valeur sub).Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/sub">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"sup"</td>
+          <td>est utilisé, pour des raisons typographiques, afin d'afficher du texte en exposant (plus haut et
+            généralement plus petit) par rapport au bloc de texte environnant.</td>
+          <td>
+            &lt;sup&gt;
+            put your text
+            &lt;/sup&gt;
+          </td>
+          <td>Cet élément devrait uniquement être utilisé pour des raisons typographiques lorsque la position du texte
+            est liée à la signification de ce texte (par exemple pour une formule mathématiques) ou aux règles
+            typographiques (par exemple en français pour Mlle, Mme ou Cie).<a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/sup">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"ol"</td>
+          <td>Il est la représentqtion d'une liste ordonnée. Les éléments d'une telle liste sont généralement affichés
+            avec un indicateur ordinal pouvant prendre la forme de nombres, de lettres, de chiffres romains ou de
+            points.</td>
+          <td>
+            &lt;ol&gt;
+            put your text
+            &lt;/ol&gt;
+          </td>
+          <td>L' éléments "ol" représent une liste d'objets,toujours placé dans l'ordre qui est très important <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/ol">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"ul"</td>
+          <td> Représentation d'une liste d'éléments sans ordre particulier. Il est souvent représenté par une liste à
+            puces.</td>
+          <td>
+            &lt;ol&gt;
+            put your text
+            &lt;/ol&gt;
+          </td>
+          <td>Cet attribut permet de définir le style de puce utilisé pour la liste. Les valeurs définies au sein des
+            spécifications pour HTML3.2 et HTML 4.0/4.01 sont :circle,disc,and square.<a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/ul">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"li"</td>
+          <td>Il est utilisé pour représenter un élément dans une liste. Il doit être contenu dans un élément
+            parent,soit d'une liste (ol),(ul) ou(menu). </td>
+          <td>
+            &lt;li&gt;
+            your item
+            &lt;/li&gt;
+          </td>
+          <td> Par exemple au cours de la création d'une liste avec la balise ol nous pouvons observer les differents
+            titres (li-premier article, li-deuxième article...)sur chaques lignes. <a
+              href=" https://developer.mozilla.org/fr/docs/Web/HTML/Element/li">lien</a> </td>
+        </tr>
+        <tr>
+          <td>dl</td>
+          <td>Il représente une liste de descriptions sous la forme d'une liste de paires associant des termes (fournis
+            par des éléments "dt") et leurs descriptions ou définitions (fournies par des éléments "dd"). </td>
+          <td>
+            &lt;dl&gt;
+            your text
+            &lt;/dl&gt;
+          </td>
+          <td> Nous pouvons utiliser cet élement pour implémenter un glossaire.pour plus d'informqtion suivre le lien <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/dl">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"dt"</td>
+          <td>Il permet d'identifier un terme dans une liste de définitions ou de descriptions. Cet élément n'apparaît
+            qu'en tant qu'élément enfant d'un élément 'dl'et est généralement suivi d'un élément 'dd'.</td>
+          <td>
+            &lt;dt&gt;
+            your code
+            &lt;/dt&gt;
+          </td>
+          <td> pour plus d'information suivez ce lien <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/dt">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"dd"</td>
+          <td>La balise "bb" est utilisé pour definition description .</td>
+          <td>
+            &lt;dd&gt;
+            your description
+            &lt;/dd&gt;
+          </td>
+          <td>Prenant en compte les attributs universels,Il indique la définition d'un terme au sein d'une liste de
+            définitions (élément (dl).<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/dd">lien</a> </td>
+        </tr>
+        <tr id="tableau">
+          <td>"table"</td>
+          <td>
+            &lt;table&gt;
+            table item
+            &lt;/table&gt;
 
-    </section>
-  </body>
+          </td>
+          <td> <img src="./images/image-4.png" alt="" srcset=""></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"details"</td>
+          <td>a balise <b>details</b> définit les détails supplémentaires que l’utilisateur peut afficher ou masquer à
+            la demande.</td>
+          <td>
+            L'attribut open indiquez que les détails (tous ce qui entre les balises <b>details</b> ) doit être visibles
+            (open) par vos visiteurs <br>
+            &lt;details&gt;
+            contenu ici
+            &lt;/details&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a href="">lien</a> </td>
+        </tr>
+        <tr>
+          <td>article</td>
+          <td>L'élément HTML article représente du contenu autonome dans un document, une page, une application, ou un
+            site. Ceci peut être un message sur un forum, un article de journal ou de magazine, une parution sur un
+            blog, un commentaire d'utilisateur, un widget ou gadget interactif, ou tout autre élément de contenu
+            indépendant</td>
+          <td>
+            &lt;article&gt;
+            your code
+            &lt;/article&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/article">lien</a></td>
+        </tr>
+        </tr>
+        <td>"summary"</td>
+        <td>
+          L'élément HTML <b>summary</b> représente une boîte permettant de révéler le contenu d'un résumé ou d'une
+          légende pour le contenu d'un élément <b>details</b> . En cliquant sur l'élément <b>summary></b> , on passe de
+          l'état affiché à l'état masqué (et vice versa) de l'élément <b>details</b> parent.
+        </td>
+        <td>
+          &lt;summary&gt;
+
+          &lt;/summary&gt;
+        </td>
+        <td>Pour plus d'information suivez ce <a href="">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"td"</td>
+          <td>Indique permet de delimiter le corps d'un table. A l'intérieur de cette balise nous allons mettre le
+            contenu d'une case du tableau.</td>
+          <td> &lt;td&gt;
+
+            &lt;/td&gt;</td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"tfoot"</td>
+          <td>L'élément HTML tfoot permet de définir un ensemble de lignes qui résument les colonnes d'un tableau. </td>
+          <td>&lt;tfoot&gt;
+            your code
+            &lt;/tfoot&gt;</td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/tfoot">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"th"</td>
+          <td>L'élément HTML th définit une cellule d'un tableau comme une cellule d'en-tête pour un groupe de cellule.
+            La nature de ce groupe est définie grâce aux attributs scope et headers.</td>
+          <td>
+          <td>&lt;th&gt;
+            your code
+            &lt;/th&gt;</td>
+          </td>
+          <td>Pour plus d'information suivez ce <a
+              href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/th">lien</a> </td>
+        </tr>
+        <tr>
+          <td>"thead"</td>
+          <td>L'élément <b>thead</b> définit un ensemble de lignes qui définit l'en-tête des colonnes d'un tableau.</td>
+          <td>
+            &lt;thead&gt;
+            your code
+            &lt;/thead&gt;</td>
+          </td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien interne</a> </td>
+        </tr>
+        <tr>
+          <td>"tr"</td>
+          <td>Il définit une ligne de cellules dans un tableau. Une ligne peut être constituée d'éléments "td" (les
+            données des cellules) et "th"(les cellules d'en-têtes)</td>
+          <td>
+            &lt;tr&gt;
+            your code
+            &lt;/tr&gt;</td>
+          </td>
+          <td>Pour plus d'information suivez ce <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/tr">lien
+              interne</a> </td>
+        </tr>
+        <tr>
+          <td>"tbody"</td>
+          <td>Indique permet de delimiter le corps d'un table. A l'intérieur de cette balise nous allons indiquer les
+            différentes ligne de notre tableau et leur colonne.</td>
+          <td>
+            &lt;tbody&gt;
+            your code
+            &lt;/tbody&gt;</td>
+          </td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien interne</a> </td>
+        </tr>
+        <tr>
+          <td>"menu"</td>
+          <td>représente un groupe de commandes que l'utilisateur peut utiliser ou activer. Il peut être utilisé afin de
+            créer des menus (affichés en haut d'un écran par exemple) et des menus contextuels (qui apparaissent au
+            clic-droit ou après avoir cliqué sur un bouton).</td>
+          <td>
+            &lt;menu&gt;
+            your code
+            &lt;/menu&gt;</td>
+          </td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien interne</a> </td>
+        </tr>
+        <tr>
+          <td>"nav"</td>
+          <td>Représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page.
+            Autrement dit, c'est une section destinée à la navigation dans un document (avec des menus, des tables des
+            matières, des index, etc.).</td>
+          <td>
+            &lt;nav&gt;
+            your code
+            &lt;/nav&gt;</td>
+          </td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien interne</a> </td>
+        </tr>
+        <tr>
+          <td>"div"</td>
+          <td>est un conteneur générique qui permet d'organiser le contenu sans représenter rien de particulier.</td>
+          <td>
+            &lt;div&gt;
+            your code
+            &lt;/div&gt;</td>
+          </td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien interne</a> </td>
+        </tr>
+
+        <tr>
+          <td>"span"</td>
+          <td>Est un conteneur générique en ligne (inline) pour les contenus phrasés. Il ne représente rien de
+            particulier.</td>
+          <td>
+            &lt;span&gt;
+            your code
+            &lt;/span&gt;</td>
+          </td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien interne</a> </td>
+        </tr>
+        <tr>
+          <td>"h1 - h6"</td>
+          <td>Représentent six niveaux de titres dans un document.</td>
+          <td>
+            &lt;h6&gt;
+            your code
+            &lt;/h6&gt;</td>
+          </td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien interne</a> </td>
+        </tr>
+        <tr>
+          <td>"p"</td>
+          <td>Représente un paragraphe de texte. Les paragraphes sont généralement représentés comme des blocs et
+            séparés par un espace vertical, leur première ligne est également parfois indentée.</td>
+          <td>
+            &lt;p&gt;
+            your code
+            &lt;/p&gt;</td>
+          </td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien interne</a> </td>
+        </tr>
+        <tr>
+          <td>"br"</td>
+          <td>Crée un saut de ligne (un retour chariot) dans le texte.</td>
+          <td>
+            &lt;br&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien interne</a> </td>
+        </tr>
+        <tr>
+          <td>"hr"</td>
+          <td>Représente un changement thématique entre des éléments de paragraphe (par exemple, un changement de décor
+            dans un récit, un changement de sujet au sein d'une section)..</td>
+          <td>
+            &lt;hr&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien interne</a> </td>
+        </tr>
+        <tr>
+          <td>"blockquote"</td>
+          <td>Qui signifie bloc de citation indique que le texte contenu dans l'élément est une citation longue.</td>
+          <td>
+            &lt;blockquote&gt; &lt;/blockquote&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien interne</a> </td>
+        </tr>
+        <tr>
+          <td>"q"</td>
+          <td>Indique que le texte qu'il contient est une citation en incise.</td>
+          <td>
+            &lt;q&gt; &lt;/q&gt;
+          </td>
+          <td>Pour plus d'information suivez ce <a href="#tableau">lien interne</a> </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+
 </html>
